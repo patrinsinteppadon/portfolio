@@ -1,0 +1,60 @@
+.project-card {
+  border-radius: 15px;
+}
+
+.project-card img {
+  width: 100%; /* todo: how do I add border stroke without offsetting width? */
+  min-height: 150px;
+
+  border: solid 2px black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-container {
+  height: 200px; /* todo: remove this */
+  display: flex;
+  
+}
+
+.left-column {
+  width: 70%;
+  background-color: red;
+}
+
+.right-column {
+  width: 30%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* todo: convert the github icon to be an icon from font-awesome */
+.card-container .social-media {
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-action {
+  background-color: #4A69D9;
+  border-radius: 36.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+}
+
+@media (min-width: 1076px) {
+  .btn-action {
+    height: 50px;
+  }
+  
+}

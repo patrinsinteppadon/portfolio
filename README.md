@@ -23,3 +23,11 @@ Each project should have a short blurb describing the project, my contribution t
 - Ask the magic conch. Link the website link and Kiran's github repo
 - TelEpi
 - Grocery app from Info 448? LOL idk but its worth a try
+
+
+#### CURRENTLY WORKING ON:
+Setting up the formatting for each project card. I've got the img to render (I will need to figure out how to stop the img border from being longer than 100% width)
+
+The text section of the card has been split into 2 columns (to follow card design #4 from the Figma). I think I got the Go to Website button working, but I'm struggling with the Github icon, because I'm implementing it as an img wrapped by an <a> tag. I think it'd be easiest and cleanest to make it an <i> component, and use font awesome for the img. We did this once in info 340 and I just need to remember how it worked.
+
+I also need to add all the text that goes into the left side (title, co-author if relevant, and the body text).
