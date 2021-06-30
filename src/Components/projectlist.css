@@ -1,5 +1,8 @@
 .project-list {
-  width: 100%;
-  height: 150px;
-  background-color: #E5E5E5; /* todo: remove this */
+  margin-bottom: 30px;
+}
+
+/* this rule should only apply to project cards */
+.project-list > * {
+  margin-bottom: 50px;
 }

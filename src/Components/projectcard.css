@@ -1,41 +1,61 @@
-.project-card {
-  border-radius: 15px;
-}
-
-.project-card img {
-  width: 100%; /* todo: how do I add border stroke without offsetting width? */
+.card-img {
+  width: 100%;
   min-height: 150px;
+  margin-bottom: -5px; /* removes a tiny gap between the img and desc */
 
   border: solid 2px black;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.card-container {
-  height: 200px; /* todo: remove this */
+/* im wondering if I'll need to enforce a min-height to make many cards
+look good together */
+.card-description {
+  /* min-height: 200px; */
   display: flex;
-  
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  padding: 12px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .left-column {
-  width: 70%;
-  background-color: red;
+  width: 60%;
+  text-align: left;
 }
 
+.card-description h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.card-description p {
+  font-size: 12px;
+}
+
+.card-description .author {
+  color: #828282;
+  margin-top: 0px;
+}
+
+/* right-column and left-column widths dont add up to 100%. This was 
+to create a gap between their contents */
 .right-column {
-  width: 30%;
-  background-color: green;
+  width: 30%; 
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-/* todo: convert the github icon to be an icon from font-awesome */
-.card-container .social-media {
-  border: none;
-  width: 24px;
-  height: 24px;
+.card-description i {
+  font-size: 24px;
+  color: black;
 }
 
 .btn-action {
@@ -57,4 +77,7 @@
     height: 50px;
   }
   
+  .card-description i {
+    font-size: 30px;
+  }
 }

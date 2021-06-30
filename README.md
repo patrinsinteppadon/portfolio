@@ -26,8 +26,14 @@ Each project should have a short blurb describing the project, my contribution t
 
 
 #### CURRENTLY WORKING ON:
-Setting up the formatting for each project card. I've got the img to render (I will need to figure out how to stop the img border from being longer than 100% width)
+I'm currently working to change  all information in ProjectCard to be provided as arguments. You can see my progress in ProjectCard.js and ProjectList.js
 
-The text section of the card has been split into 2 columns (to follow card design #4 from the Figma). I think I got the Go to Website button working, but I'm struggling with the Github icon, because I'm implementing it as an img wrapped by an <a> tag. I think it'd be easiest and cleanest to make it an <i> component, and use font awesome for the img. We did this once in info 340 and I just need to remember how it worked.
+Right now I am stuck trying to figure out how to pass the project description to Project Card--the issue is that my project descriptions have line breaks in them. Because I pass in the argument as a string, those line breaks are lost.
 
-I also need to add all the text that goes into the left side (title, co-author if relevant, and the body text).
+Possible solutions:
+- The `description` argument gets passed in as a `<p>` html tag, as opposed to being a string
+- The `description` argument is given an array of strings, where each index is a single paragraph. That way the paragraphs can be rendered in separate `<p>` tags. This is probably the path I will take. 
+
+#### Known issues:
+- I seem to have forgotten how to use `img` tags properly when using `require`. I've been sourcing them by importing the img as a variable. 
+- I need an actual favicon to replace the current placeholder
