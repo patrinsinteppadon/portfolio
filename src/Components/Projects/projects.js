@@ -1,8 +1,5 @@
-import './projectlist.css';
-import ProjectCard from './ProjectCard.js';
-
-import debateNowImg from './../img/debatenow.png';
-import waveImg from './../img/wave.png';
+import debateNowImg from './../../img/debatenow.png';
+import waveImg from './../../img/wave.png';
 
 const projects = [
   {
@@ -27,32 +24,18 @@ const projects = [
     description: ["An unpublished Android and iOS app that provides crowdsourced translation help to people in the United States with limited fluency in English. Users can request for help, establishing a video call with a bilingual volunteer.", 
     "For this capstone project I collaborated as a developer in a team of 2 developers, 1 designer, and 1 project manager. We performed UX research to create a product that was genuinely helpful to our users.",
     "Created using React Native. Project was managed using Jira in an agile workflow. Uses WebRTC library to establish video calls."]
+  },
+  {
+    title: "Wave - Capstone Project",
+    image: waveImg,
+    author: "Co-authored with Michelle Lee, Tiffany Wong, and Paola Vanegas",
+    url: "https://patrinsinteppadon.github.io/lilo-landing/",
+    github: "https://github.com/patrinsinteppadon/lilo",
+    figma: "https://www.figma.com/proto/gEySL44JG37tE2GGXR66PT/INFO490%3A-Experiment-626?node-id=1122%3A1442&scaling=scale-down&page-id=1119%3A1231",
+    description: ["An unpublished Android and iOS app that provides crowdsourced translation help to people in the United States with limited fluency in English. Users can request for help, establishing a video call with a bilingual volunteer.", 
+    "For this capstone project I collaborated as a developer in a team of 2 developers, 1 designer, and 1 project manager. We performed UX research to create a product that was genuinely helpful to our users.",
+    "Created using React Native. Project was managed using Jira in an agile workflow. Uses WebRTC library to establish video calls."]
   }
 ]
 
-/**
- * returns a list of each project. creates one ProjectCard for
- * each object outlined in the `projects` array.
- */
-function ProjectList() {
-  return (
-    <div className="project-list">
-      {
-        projects.map((project) => 
-          <ProjectCard 
-            key={project.title}
-            title={project.title}
-            image={project.image}
-            author={project.author}
-            url={project.url}
-            github={project.github}
-            figma={project.figma}
-            description={project.description}
-          />
-        )
-      }
-    </div>
-  );
-}
-
-export default ProjectList;
+export default projects;

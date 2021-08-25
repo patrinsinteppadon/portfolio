@@ -1,6 +1,6 @@
 import './projectcard.css';
 
-import figmaIcon from './../img/figma.svg';
+import figmaIcon from './../../img/figma.svg';
 /**
  * this component represents the container for each project 
  * represented in the project list.
