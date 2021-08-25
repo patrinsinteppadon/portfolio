@@ -41,6 +41,7 @@ look good together */
 .card-description .author {
   color: #828282;
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 /* right-column and left-column widths dont add up to 100%. This was 
@@ -56,6 +57,15 @@ to create a gap between their contents */
 .card-description i {
   font-size: 24px;
   color: black;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.icons * {
+  margin-left: 5px;
 }
 
 .btn-action {

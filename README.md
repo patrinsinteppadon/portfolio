@@ -8,10 +8,10 @@ Link to Figma: https://www.figma.com/file/9mzJRGXIDeZFfta7FfY6sd/Patrin-Portfoli
 #### Things to add:
 - Visual theme for the site (follow Wave's scheme for now)
 - List of projects (maybe they'll be card format or something)
-- Navbar?
 - Home page with project list
 - Short "About" section with an introduction
 - Short "Skills" section where I go over the languages I know, probably in a stylized bullet list. I can also go over notable projects I've done with the language?
+- Link to a downloadable PDF Resume
 - Should I have a work experience section?
 - Github Link to this site
 - LinkedIn and email
@@ -26,14 +26,10 @@ Each project should have a short blurb describing the project, my contribution t
 
 
 #### CURRENTLY WORKING ON:
-I'm currently working to change  all information in ProjectCard to be provided as arguments. You can see my progress in ProjectCard.js and ProjectList.js
+I'm currently working on adding other projects, aside from DebateNow. I know that Wave will be an important project to add, and then I will need to look for others soon after it's added.
 
-Right now I am stuck trying to figure out how to pass the project description to Project Card--the issue is that my project descriptions have line breaks in them. Because I pass in the argument as a string, those line breaks are lost.
+I should change the icon to show the `Figma` logo.
 
-Possible solutions:
-- The `description` argument gets passed in as a `<p>` html tag, as opposed to being a string
-- The `description` argument is given an array of strings, where each index is a single paragraph. That way the paragraphs can be rendered in separate `<p>` tags. This is probably the path I will take. 
+Eventually I should abstract the `projects` array to a separate file. for cleanliness
 
-#### Known issues:
-- I seem to have forgotten how to use `img` tags properly when using `require`. I've been sourcing them by importing the img as a variable. 
-- I need an actual favicon to replace the current placeholder
+Eventually I should add the logo "WAVE" to the Wave project img.
